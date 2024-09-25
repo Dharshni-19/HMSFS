@@ -26,7 +26,7 @@ const LoginPage = () => {
 
     // Route based on the selected role
     if (loginDetails.role === 'admin') {
-      
+
       navigate('/admin/status');  // Redirect to Admin page
     } else if (loginDetails.role === 'student') {
       navigate('/student');  // Redirect to Student page
@@ -34,39 +34,48 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-page">
-      <h2>Login to Hostel Management</h2>
+    <div className="container login-container d-flex align-items-center">
+      <div className="login-page rounded">
 
-      <InputField
-        label="Username"
-        name="username"
-        value={loginDetails.username}
-        onChange={handleInputChange}
-      />
-
-      <InputField
-        label="Password"
-        name="password"
-        type="password"
-        value={loginDetails.password}
-        onChange={handleInputChange}
-      />
-
-      <div className="role-selection">
-        <label htmlFor="role">Select Role</label>
-        <select
-          id="role"
-          name="role"
-          value={loginDetails.role}
+        <h2 className='rounded'>Login to Hostel Management</h2>
+        <br />
+        <InputField
+          label="Username"
+          name="username"
+          value={loginDetails.username}
           onChange={handleInputChange}
-        >
-          <option value="" disabled>Select a role</option>
-          <option value="admin">Admin</option>
-          <option value="student">Student</option>
-        </select>
-      </div>
+        />
 
-      <button onClick={handleLogin} className="login-btn">Login</button>
+        <br />
+
+        <InputField
+          label="Password"
+          name="password"
+          type="password"
+          value={loginDetails.password}
+          onChange={handleInputChange}
+        />
+
+        <br />
+
+        <div className="role-selection">
+          <label htmlFor="role">Select role:&nbsp;</label>
+          <select
+            id="role"
+            name="role"
+            value={loginDetails.role}
+            onChange={handleInputChange}
+          >
+            <option value="" disabled>Select a role</option>
+            <option value="admin">Admin</option>
+            <option value="student">Student</option>
+          </select>
+        </div>
+
+        <br />
+
+        <button onClick={handleLogin} className="login-btn btn btn-primary col-6">Login</button>
+      </div>
     </div>
   );
 };

@@ -52,9 +52,9 @@ const StudentIssue = () => {
         <div>
             <StudentPage />
             {data && <DataTable columns={["name", "roomID", "issue", "role"]} data={data} />}
-            <h2>Report Issues</h2>
-            <p>Students can report any issues related to hostel facilities here.</p>
-            <button onClick={handleAdd} className="add-btn">Add</button>
+            {/* <h2>Report Issues</h2>
+            <p>Students can report any issues related to hostel facilities here.</p> */}
+            <button onClick={handleAdd} className="add-btn btn btn-primary">Add</button>
         </div>
     );
 };

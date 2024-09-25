@@ -11,6 +11,7 @@ const InputField = ({ label, type = "text", name, value, onChange }) => {
         name={name}
         value={value}
         onChange={onChange}
+        className="form-control"
       />
     </div>
   );
