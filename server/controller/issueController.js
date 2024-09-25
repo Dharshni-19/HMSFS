@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 // Import the Issue model
-const Issue = require('../model/issue');
+const Issue = require('../model/issues');
 
 // Initialize Express
 const app = express();
