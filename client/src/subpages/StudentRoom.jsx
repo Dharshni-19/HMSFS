@@ -28,7 +28,7 @@ const StudentRoom = () => {
       {/* <h2>Room Info</h2>
       <p>Check your room information and current status.</p> */}
       <button onClick={handleAdd} className="add-btn">Add</button>
-      <button onClick={handleBookRoom} className="book-room-btn">Book Room</button>
+      <button onClick={handleBookRoom} className="book-room-btn btn btn-primary">Book Room</button>
     </div>
   );
 };
