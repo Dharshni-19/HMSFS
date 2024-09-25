@@ -3,30 +3,33 @@ import React from 'react';
 
 const DataTable = ({ columns, data }) => {
   return (
-    <table className="data-table">
-      <thead>
-        <tr>
-          {columns.map((col, index) => (
-            <th key={index}>{col}</th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {data.length > 0 ? (
-          data.map((row, rowIndex) => (
-            <tr key={rowIndex}>
-              {columns.map((col, colIndex) => (
-                <td key={colIndex}>{row[col]}</td>
-              ))}
-            </tr>
-          ))
-        ) : (
+    <div>
+      <br />
+      <table className="data-table table table-bordered table-hover container">
+        <thead>
           <tr>
-            <td colSpan={columns.length}>No data available</td>
+            {columns.map((col, index) => (
+              <th key={index}>{col}</th>
+            ))}
           </tr>
-        )}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {data.length > 0 ? (
+            data.map((row, rowIndex) => (
+              <tr key={rowIndex}>
+                {columns.map((col, colIndex) => (
+                  <td key={colIndex}>{row[col]}</td>
+                ))}
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan={columns.length}>No data available</td>
+            </tr>
+          )}
+        </tbody>
+      </table>
+    </div>
   );
 };
 

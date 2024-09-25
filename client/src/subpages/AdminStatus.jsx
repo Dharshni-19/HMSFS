@@ -31,10 +31,10 @@ const AdminStatus = () => {
         <div>
             <AdminPage />
             {data && <DataTable columns={["name", "roomID", "type", "role"]} data={data} />}
-            <h2>Hostel Status</h2>
-            <p>Overview of hostel rooms and availability.</p>
+            {/* <h2>Hostel Status</h2>
+            <p>Overview of hostel rooms and availability.</p> */}
             <button onClick={() => handlePending(row.original)} className="pending-btn">Pending</button>
-             <button onClick={() => handleResolved(row.original)} className="resolved-btn">Resolved</button>
+            <button onClick={() => handleResolved(row.original)} className="resolved-btn">Resolved</button>
             <button onClick={() => handleRejected(row.original)} className="rejected-btn">Rejected</button>
         </div>
     );
