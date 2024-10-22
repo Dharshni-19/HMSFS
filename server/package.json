@@ -11,12 +11,12 @@
     "mongoose": "^8.6.3"
   },
   "scripts": {
-    "start": "node app.js",           // To start your app
-    "dev": "nodemon app.js",          // For development (requires `nodemon` as a dev dependency)
-    "test": "echo \"Error: no test specified\" && exit 1",  // Placeholder for testing
-    "build": "echo \"No build step needed\" && exit 0",     // Placeholder for build step (if needed)
-    "lint": "eslint .",                 // Run linter (requires eslint as dev dependency)
-    "prestart": "npm run lint"          // Optionally lint before starting
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build step needed\" && exit 0",
+    "lint": "eslint .",
+    "prestart": "npm run lint"
   },
   "author": "Your Name",
   "license": "ISC"
