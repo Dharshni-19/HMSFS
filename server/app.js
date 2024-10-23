@@ -17,9 +17,9 @@ mongoose.connect('mongodb+srv://Dharshni:Dharshni@19@cluster0.jzr8b.mongodb.net/
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Importing models
-const User = require('./model/User');  // Assuming you have defined user schema in this file
-const Room = require('./model/Room');  // Assuming you have defined room schema in this file
-const Issue = require('./model/Issue'); // Assuming you have defined issue schema in this file
+const User = require('./model/user');  // Assuming you have defined user schema in this file
+const Room = require('./model/room');  // Assuming you have defined room schema in this file
+const Issue = require('./model/issue'); // Assuming you have defined issue schema in this file
 
 // ---------------------------------- USER CONTROLLER ----------------------------------
 // Create a new user
