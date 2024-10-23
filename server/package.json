@@ -14,7 +14,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"No build step needed\" && exit 0",
+    "build": "echo \"No build step needed\" && exit 0"
   },
   "author": "Your Name",
   "license": "ISC"
